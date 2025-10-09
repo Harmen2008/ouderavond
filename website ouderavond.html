@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informatieavond | Hoornbeeck College</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      background-color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #009999;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      color: #007c7c;
+    }
+
+    .opleiding-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .opleiding {
+      background: #f7fafa;
+      border: 1px solid #d6e8e8;
+      border-radius: 10px;
+      padding: 15px;
+    }
+
+    .opleiding h3 {
+      color: #007c7c;
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      background: #f3f3f3;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <!-- Hier voeg je je lokale logo toe -->
+      <img src="hoornbeeck-logo.png" alt="Hoornbeeck College logo">
+    </div>
+
+    <nav>
+      <ul>
+        <li class="dropdown">
+  <a href="#informatieavond" class="active">Over de ouderavond</a>
+  <ul class="dropdown-menu">
+    <li><a href="#doel">Doel</a></li>
+    <li><a href="#organisatie">Organisatie</a></li>
+    <li><a href="#programma">Programma</a></li>
+    <li><a href="#plattegrond">Plattegrond</a></li>
+  </ul>
+</li>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#over">Over het Hoornbeeck College</a></li>
+        <li><a href="#informatieavond">Over de informatieavond</a></li>
+        <li><a href="#opleidingen">Verschillende opleidingen</a></li>
+        <li><a href="#sfeerbeelden">Sfeerbeelden</a></li>
+        <li><a href="#ontwikkelaar">Over de ontwikkelaar</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="over">
+      <h1>Welkom bij de informatieavond</h1>
+      <p>Welkom bij het Hoornbeeck College! Deze avond is bedoeld om u kennis te laten maken met onze opleidingen, visie op onderwijs en begeleiding van studenten.</p>
+    </section>
+
+    <section id="opleidingen">
+      <h2>Onze opleidingen</h2>
+      <p>Bij het Hoornbeeck College bieden we een breed scala aan opleidingen binnen verschillende vakrichtingen. Hieronder vindt u een aantal voorbeelden:</p>
+
+      <div class="opleiding-grid">
+        <div class="opleiding"> 
+          <h3>ICT </h3>
+          <p>Leer alles over netwerken, beveiliging, hardware en software. Bereid je voor op een toekomst in de ICT-sector.</p>
+        </div>
+        <div class="opleiding">
+          <h3>Zorg & Welzijn</h3>
+          <p>Voor studenten met een hart voor mensen: werk in de zorg, verpleging of maatschappelijke dienstverlening.</p>
+        </div>
+        <div class="opleiding">
+          <h3>Techniek & Bouw</h3>
+          <p>Combineer theorie en praktijk en bouw mee aan duurzame oplossingen in de wereld van morgen.</p>
+        </div>
+        <div class="opleiding">
+          <h3>Economie & Administratie</h3>
+          <p>Leer ondernemerschap, boekhouding en klantgericht werken binnen de economische sector.</p>
+        </div>
+        <div class="opleiding">
+          <h3>Logistiek & Transport</h3>
+          <p>Ontdek de wereld van goederenstromen, voorraadbeheer en transportplanning.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="informatieavond">
+      <h2>Over de informatieavond</h2>
+      <p>Vanavond hebben we een informatieavond die onze opleiding uitlegt: welke vakken we krijgen, wat we doen op een dag en hoe de tijden eruit zien.</p>
+    </section>
+
+    <section id="sfeerbeelden">
+      <h2>Sfeerbeelden</h2>
+      <p>Bekijk hieronder enkele sfeerbeelden van het Hoornbeeck College:</p>
+      <img src="sfeerbeeld1.jpg" alt="Sfeerbeeld" style="width:100%; max-width:600px; border-radius:10px;">
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Wilt u meer weten over het Hoornbeeck? Neem contact op via:</p>
+      <p><strong>E-mail:</strong> <a href="mailto:info@hoornbeeck.nl">info@hoornbeeck.nl</a><br>
+         <strong>Telefoon:</strong> 0318-694000</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Hoornbeeck College — Informatieve website voor de ouderavond.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
